@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 40 100% 96%;
-    --foreground: 25 30% 15%;
+    --background: 240 40% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 25 30% 15%;
+    --card: 240 30% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 25 30% 15%;
+    --popover: 240 30% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 10 90% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 100% 65%;
+    --primary-foreground: 240 40% 8%;
 
-    --secondary: 45 95% 60%;
-    --secondary-foreground: 25 30% 15%;
+    --secondary: 280 70% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 80% 88%;
-    --muted-foreground: 25 25% 40%;
+    --muted: 240 20% 18%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 350 85% 62%;
+    --accent: 200 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 60% 80%;
-    --input: 35 60% 80%;
-    --ring: 10 90% 55%;
+    --border: 240 20% 25%;
+    --input: 240 20% 20%;
+    --ring: 45 100% 65%;
 
     --radius: 0.5rem;
 
@@ -100,6 +100,26 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Roboto", sans-serif;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, white, transparent),
+      radial-gradient(2px 2px at 60% 70%, white, transparent),
+      radial-gradient(1px 1px at 50% 50%, white, transparent),
+      radial-gradient(1px 1px at 80% 10%, white, transparent),
+      radial-gradient(2px 2px at 90% 60%, white, transparent),
+      radial-gradient(1px 1px at 33% 80%, white, transparent),
+      radial-gradient(1px 1px at 15% 60%, white, transparent);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    animation: stars 200s linear infinite;
+  }
+
+  @keyframes stars {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
   }
 
   h1,
