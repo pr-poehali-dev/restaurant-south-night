@@ -324,6 +324,20 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <Card className="overflow-hidden animate-fade-in">
+              <CardContent className="p-0">
+                <iframe 
+                  src="https://yandex.ru/map-widget/v1/?ll=49.348355%2C53.507836&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEyMDk5ORJb0KDQvtGB0YHQuNGPLCDQotC-0LvRjNGP0YLRgtC4LCDRg9C70LjRhtCwIDQwINC70LXRgiDQn9C-0LHQtdC00YssIDQiCg1cRwVCFQ42W0I%2C&z=17"
+                  width="100%" 
+                  height="400" 
+                  frameBorder="0"
+                  className="w-full"
+                  title="Карта расположения ресторана"
+                />
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
