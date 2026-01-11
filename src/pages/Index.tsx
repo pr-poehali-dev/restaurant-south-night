@@ -333,6 +333,16 @@ export default function Index() {
           <p className="text-sm opacity-80 mt-2">Традиции южного гостеприимства</p>
         </div>
       </footer>
+
+      <a 
+        href="https://wa.me/79626103535" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-transform z-50 animate-scale-in"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" size={28} />
+      </a>
     </div>
   );
 }
