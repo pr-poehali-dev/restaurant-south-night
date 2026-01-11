@@ -309,7 +309,7 @@ export default function Index() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg">+7 (495) 123-45-67</p>
+                <p className="text-lg">+7 (962) 610-35-35</p>
                 <div className="flex gap-4 mt-4">
                   <a href="#" className="text-primary hover:text-secondary transition">
                     <Icon name="Facebook" size={28} />
